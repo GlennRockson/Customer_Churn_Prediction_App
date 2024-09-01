@@ -7,3 +7,10 @@ scikit-learn==1.5.1
 imbalanced-learn
 pytest
 joblib==1.4.2
+pyodbc
+lightgbm
+seaborn
+python-dotenv
+bcrypt 
+plotly>=5.0
+faker 
