@@ -3,7 +3,7 @@ scipy
 gradio
 streamlit
 pandas==2.2.2
-scikit-learn==1.4.2
+scikit-learn==1.5.1
 imbalanced-learn
 pytest
 joblib==1.4.2

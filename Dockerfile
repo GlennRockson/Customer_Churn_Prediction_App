@@ -35,8 +35,8 @@ RUN pip install --upgrade pip \
     && pip install -r requirements.txt
 
 # Expose the port your app runs on
-EXPOSE 5000
+EXPOSE 5001
 
 # Command to run your application
-CMD ["streamlit", "run", "app.py", "--server.port=5000", "--server.address=0.0.0.0"]
+CMD ["streamlit", "run", "app.py", "--server.port=8500", "--server.address=0.0.0.0"]
 
