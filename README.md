@@ -17,27 +17,6 @@ User Benefits
 4.Machine Learning Integration
 The application allows you to select between multiple predictive models, providing flexibility and accuracy in forecasts.
 
-## Setup ⚙️
-
-To set up and run the Streamlit app in your local environment, follow these instructions:
-
-1. Clone this repository to your local machine using the following command. Replace \<repository-url\> with the actual url to this repository:
-
-![Clone](Images/Readmepics/Clone.png)
-
-2. Create and activate a virtual environment:
-
-![venv](Images/Readmepics/venv.png)
-
-3. Install requirements.txt:
-
-![Requirements](Images/Readmepics/Requirements.png)
-
-4. Run the app using the following command:
-
-![Run](Images/Readmepics/Run.png)
-
-The app will be launched in your default web browser and can then be used to make sales predictions based on the input fields.
 
 
 
