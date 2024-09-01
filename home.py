@@ -1,53 +1,61 @@
 import streamlit as st
 
 def show():
-   
+    st.title("Welcome to the Customer Retention Analyzer")
 
-    st.title("Welcome to the Churn Prediction Application")
+    container = st.container()
+    col1, col2 = container.columns([5, 1])
 
-    col1, col2 = st.columns([3, 1])
-
+    # Documentation and Details about the Application
     with col1:
-        st.image("Static/images/churn.png", width=800)  # Adjust the width to fit the content appropriately
-        st.header("📘 About the Application")
-        st.write(
-            """
-            This application is designed to predict customer churn using machine learning techniques. 
-            It helps businesses understand customer behavior and improve retention strategies. 
-            By analyzing historical data, this application provides insights into factors contributing to customer churn.
-            """
-        )
+        with st.expander("### About the Application", expanded=False):
+            st.markdown("#### Customer Retention Analyzer")
+            st.write("""
+                The Customer Retention Analyzer is designed to predict whether a customer is likely to leave the service based on a variety of factors. This tool aids companies in implementing proactive retention strategies.
+            """)
+
+            st.markdown("#### Key Features")
+            st.write("""
+                - **View Data**: Accessed data in a remote database via connection.
+                - **Dashboard**: Contains data visualizations to explore trends.
+                - **Predict**: Make real-time predictions with machine learning models.
+            """)
+
+            st.markdown("#### User Benefits")
+            st.write("""
+                - Make data-driven decisions effortlessly.
+                - Harness the power of machine learning without the complexity.
+                - Save and analyze your data securely.
+            """)
+
+            st.markdown("#### Machine Learning Integration")
+            st.write("""
+                The application allows you to select between multiple predictive models, providing flexibility and accuracy in forecasts.
+            """)
+
+            st.markdown("#### Documentation")
+            st.write("""
+                - [Source Code](https://github.com/GlennRockson/Customer_Churn_Prediction_App)
+                - [Model Training](https://github.com/GlennRockson/Telco_Customer_Churn-Analysis)
+            """)
+        
+        st.image("images/churn05.png", use_column_width="always")
 
     with col2:
-        st.header("🔗 Quick Links")
-        st.markdown(
-            """
-            - **GitHub Repository**: [Visit GitHub](https://github.com/GlennRockson/Telco_Customer_Churn-Analysis)
-            - **LinkedIn Profile**: [Visit LinkedIn](https://www.linkedin.com/in/glenn-rockson/)
-            - **Read on Medium**: [Visit Medium](https://medium.com/@joojoakorful)
-            """,
-            unsafe_allow_html=True
-        )
-        
-        st.header("🤝 Connect with Me")
-        st.markdown(
-            """
-            - [GitHub](https://github.com/GlennRockson) 👨‍💻
-            - [LinkedIn](https://www.linkedin.com/in/glenn-rockson/) 🖇️
-            - [Medium](https://medium.com/@joojoakorful) 📘
-            """,
-            unsafe_allow_html=True
-        )
+        st.markdown("#### 🔗 Quick Links")
+        st.write("""
+            - [GitHub Repository](https://github.com/GlennRockson/Customer_Churn_Prediction_App)
+            - [LinkedIn Profile](https://www.linkedin.com/in/glenn-rockson/)
+            - [Read on Medium](https://medium.com/@joojoakorful)
+        """)
 
-    st.markdown(
-        """
-        <hr style='margin-top: 2rem; margin-bottom: 1rem;'>
-        <footer style='text-align: center; color: grey;'>
-            <p>Churn Prediction Application</p>
-        </footer>
-        """,
-        unsafe_allow_html=True
-    )
+        st.markdown("##### 🤝 Connect with Me")
+        st.write("""
+            - [GitHub](https://github.com/GlennRockson)
+            - [LinkedIn](https://www.linkedin.com/in/glenn-rockson/)
+            - [Medium](https://medium.com/@joojoakorful)
+        """)
+
 
 if __name__ == "__main__":
     show()

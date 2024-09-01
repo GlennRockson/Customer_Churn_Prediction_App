@@ -14,9 +14,6 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-
-
-
 # Main app logic
 def main():
     if 'login_status' not in st.session_state:

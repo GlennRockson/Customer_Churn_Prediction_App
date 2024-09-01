@@ -1,1 +1,2 @@
-# Customer_Churn_Prediction_App
+# Customer-Churn-Prediction-App
+Customer Churn Prediction App

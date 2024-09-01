@@ -76,4 +76,4 @@ def show():
         show_analytics_dashboard(df)
 
 if __name__ == "__main__":
-      show()
+    show()
